@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+}
+.precio-tabla{
+    margin:auto;
+    max-width: 400px;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tabla-seleccion{
+    background-color: turquoise;
+    padding: 25px 17px;
+}
+.tabla-cuerpo{
+    width: 100%;
+    padding: 40px;
+    background-color: violet;
+}
+
+.amount{
+    font-size: 50px;
+}

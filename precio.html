@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="precio.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <div class="precio-tabla">
+        <div class="tabla-seleccion">
+        <label>
+          <input type="radio" name="payment" value="96"  checked  />
+          Mensual
+        </label>
+        <label>
+          <input type="radio" name="payment" value="88" />
+          Trimestral
+        </label>
+        <label>
+            <input type="radio" name="payment" value="50" />
+            Semestral
+          </label>
+        <label>
+            <input type="radio" name="payment" value="0"/>
+            Anual
+        </label>
+    </div>
+    <div class="tabla-cuerpo">
+        <h1>BÁSICO</h1>
+        <div>
+          Original: s/<span class="original"></span>
+        </div>
+          
+        <div>
+          Discount: <span class="percent"></span>%
+        </div>
+          
+        <div>
+          Savings: s/<span class="savings"></span>
+        </div>
+      
+        <div class="precio">
+         <h2> Precio: </h2> s/<span class="amount"></span>
+        </div>
+    </div>
+      </div>
+
+      <script>
+          var paymentInfo = (function () {
+  var original = 240,
+      basePercent = 96;
+  
+  return (function (percent) {
+    percent = percent || basePercent;
+    
+    var discount = original * (percent / 100),
+        current = original - discount;
+    
+    return {
+      original: original,
+      percent: percent,
+      discount: discount,
+      current: current
+    };
+  });
+}());
+
+
+function setInfo(info) {
+  $('.original').text(info.original.toFixed(2));
+  $('.percent').text(info.percent);
+  $('.savings').text(info.discount.toFixed(2));
+  $('.amount').text(info.current.toFixed(2));
+}
+
+$('input[name="payment"]').on('change', function () {
+  var val = $(this).val(),
+      info = paymentInfo(parseInt(val));
+  
+  setInfo(info);
+});
+
+setInfo(paymentInfo());
+      </script>
+</body>
+</html>
