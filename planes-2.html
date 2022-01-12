@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="planes.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+        
+            <div class="content">
+              <h1 class="brand">logo</h1>
+              <div class="links nav-items">
+                <a href="index.html">Inicio</a>
+                <a href="#">Demos</a>
+                <a href="planes.html">Planes</a>
+               <a href="#beneficios">Beneficios</a>
+                <a href="#faq">Faq</a>
+              </div>
+              <i class="material-icons menu" onclick="menu()">menu</i>
+            </div>
+            <div class="dropdown" id="dropdown">
+             <a href="index.html">Inicio</a>  
+             <a href="#">Demos</a>
+              <a href="planes.html">Planes</a>
+              <a href="#beneficios">Beneficios</a>
+             <a href="#faq">Preguntas Frecuentes</a>
+            </div>
+          
+        </nav>
+    </header>
+
+    <section class="main ">
+        <div class="contenedor flex-o mgt-30">
+          <div class="header">
+            <h1 class="header__heading">Elige el mejor plan</h1>
+            <form class="form">
+  
+              <div class="form__box">
+                <input type="radio" id="monthly" class="radio-btn monthly" name="price" value="monthly"
+                checked>
+                <label for="monthly" class="label">Mensual</label>
+              </div>
+              
+              <div class="form__box">
+                <input type="radio" id="semestral" class="radio-btn semestral" name="price" value="semestral">
+                <label for="semestral" class="label">Semestral</label>
+              </div>
+  
+              <div class="form__box">
+                <input type="radio" id="yearly" class="radio-btn yearly" name="price" value="yearly">
+                <label for="yearly" class="label">Anual</label>
+              </div>
+  
+            </form>
+          </div><!-- Header -->
+          <div class="container">
+          <div class="pricing-table grid-tabla">
+              <!-- Column - Standard -->
+              <div class="col free">
+                <h2 class="col__header">Gratis</h2>
+                <div class="price-box">
+                  <p class="price">0 soles</p>
+                  <p class="small-text">por mes</p>
+                  <p class="old-price"></p>
+                  <p class="important-message"></p>
+                </div><!-- Price box -->
+                <ul class="list">
+                  <li class="list__heading">Beneficios:</li>
+                  <li class="list__item">
+                    <span class="material-icons">check</span>
+                    <span class="list__item-text">Url y Logo del negocio</span>
+                    </li>
+                  <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">0% de comisión</span>
+                  </li>
+                  <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">fondo predeterminado</span>
+                  </li>
+                  <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">3 enlaces de pago</span>
+                  </li>
+                  <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">QR digital</span>
+                  </li>
+                  <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">Compartir enlace</span>
+                  </li>
+                <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">Publicidad </span>
+                </li>
+                <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">Soporte vía correo</span>
+                  </li>
+                </ul><!-- List -->
+                <div class="links-tabla">
+                  <a href="#" class="cta-boton rojo">Empieza Gratis 💰</a>
+                  <a href="" class="links links-info">Ver demo</a>
+                </div><!-- Links -->
+              </div>
+              <!-- Column - Standard -->
+             <!-- Column - Standard -->
+            <div class="col standard">
+              <h2 class="col__header">Standard</h2>
+              <div class="price-box">
+                <p class="price">s/ 10 soles</p>
+                <p class="small-text">por mes</p>
+                <p class="old-price"></p>
+                <p class="important-message"></p>
+              </div><!-- Price box -->
+              <ul class="list">
+                <li class="list__heading">Beneficios:</li>
+                <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">Url y Logo del negocio</span>
+                </li>
+                <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">0% de comisión</span>
+                  </li>
+                <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">Fondo Básico</span>
+                </li>
+                <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">Chat vía whastapp y/o facebook</span>
+                </li>
+                <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">6 enlaces de pago</span>
+                  </li>
+                <li class="list__item">
+                 <span class="material-icons">check</span>
+                 <span class="list__item-text">QR digital</span>
+                 </li>
+                <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">Diseño Básico de Cartel QR físico</span>
+                </li>
+                <li class="list__item">
+                 <span class="material-icons">check</span>
+                <span class="list__item-text">Compartir enlace</span>
+                </li>
+                <li class="list__item">
+                  <span class="material-icons">check</span>
+                 <span class="list__item-text">Publicidad</span>
+                 </li>
+                 <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">Soporte vía whastapp</span>
+                  </li>
+              </ul><!-- List -->
+              <div class="links-tabla">
+                <a href="#" class="cta-boton rojo">Empieza Gratis 💰</a>
+                <a href="" class="links links-info">Ver demo</a>
+              </div><!-- Links -->
+            </div>
+            <!-- Column - Standard -->
+            <!-- Column - Standard -->
+            <div class="col advanced favorito">
+              <h2 class="col__header">Avanzado</h2>
+              <div class="price-box">
+                <p class="price">s/ 15 soles</p>
+                <p class="small-text tblanco"> por mes</p>
+                <p class="old-price"></p>
+                <p class="important-message"></p>
+              </div><!-- Price box -->
+              <ul class="list">
+                <li class="list__heading">Beneficios:</li>
+                <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">Url y Logo del negocio</span>
+                  </li>
+                  <li class="list__item">
+                    <span class="material-icons">check</span>
+                    <span class="list__item-text">0% de comisión</span>
+                    </li>
+                <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">Fondo Avanzado</span>
+                </li>
+              <li class="list__item">
+              <span class="material-icons">check</span>
+              <span class="list__item-text">Chat vía whastapp y/o facebook</span>
+              </li>
+                <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">12 enlaces de pago</span>
+                </li>
+                <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">QR digital</span>
+                </li>
+                <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">Diseño Personalizado de Cartel QR físico</span>
+                </li>
+                <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">Compartir enlace</span>
+                </li>
+              <li class="list__item">
+              <span class="material-icons">check</span>
+              <span class="list__item-text">Publicidad </span>
+              </li>
+              <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">Icono personalizado </span>
+                </li>
+                <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">Meta personalizado </span>
+                  </li>
+                  <li class="list__item">
+                    <span class="material-icons">check</span>
+                    <span class="list__item-text">Soporte vía whastapp</span>
+                    </li>
+              </ul><!-- List -->
+              <div class="links-tabla">
+                <a href="#" class="cta-boton rojo">Empieza Gratis 💰</a>
+                <a href="" class="links links-info">Ver demo</a>
+              </div><!-- Links -->
+            </div>
+            <!-- Column - Advanced -->
+            <!-- Column - Advanced -->
+            <div class="col enterprise">
+              <h2 class="col__header">Empresarial</h2>
+              <div class="price-box">
+                <p class="price">s/ 20 soles</p>
+                <p class="small-text">por mes</p>
+                <p class="old-price"></p>
+                <p class="important-message"></p>
+              </div><!-- Price box -->
+              <ul class="list">
+                <li class="list__heading">Beneficios:</li>
+                <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">Url y Logo del negocio</span>
+                  </li>
+                  <li class="list__item">
+                    <span class="material-icons">check</span>
+                    <span class="list__item-text">0% de comisión</span>
+                    </li>
+  
+                <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">fondo personalizado</span>
+                </li>
+              <li class="list__item">
+              <span class="material-icons">check</span>
+              <span class="list__item-text">Chat vía whastapp y/o facebook</span>
+              </li>
+                <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">Enlaces de pago Ilimitado</span>
+                </li>
+                <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">QR digital</span>
+                </li>
+                <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">Diseño Personalizado de Cartel QR físico</span>
+                </li>
+                <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">Compartir enlace</span>
+                </li>
+              <li class="list__item">
+              <span class="material-icons">check</span>
+              <span class="list__item-text">Sin Publicidad </span>
+              </li>
+              <li class="list__item">
+                <span class="material-icons">check</span>
+                <span class="list__item-text">Icono personalizado </span>
+                </li>
+                <li class="list__item">
+                  <span class="material-icons">check</span>
+                  <span class="list__item-text">Meta personalizado </span>
+                  </li>
+                  <li class="list__item">
+                    <span class="material-icons">check</span>
+                    <span class="list__item-text">Soporte 24/7</span>
+                    </li>
+              </ul><!-- List -->
+              <div class="links-tabla">
+                <a href="#" class="cta-boton rojo">Empieza Gratis 💰</a>
+                <a href="" class="links links-info">Ver demo</a>
+              </div><!-- Links -->
+            </div><!-- Column - Enterprise -->
+          </div><!-- Pricing table -->
+        </div>
+        </div><!-- main -->
+    </section><!-- Container -->
+
+    <section class="main flex" id="beneficios">
+        <div class="contenedor flex-o gap">
+        <h2>Beneficios
+        </h2>
+        <div class="container">
+            <div class="grid">
+              <article>
+                  <div class="cabeza">
+                      <div class="numer">1</div>
+                  </div>
+                <div class="text">
+                  <h3>Comparte
+                    Ilimitadamente</h3>
+                   <p>a todas tus redes
+                    sociales y canales
+                    de chat.</p>
+                </div>
+              </article>
+              <article>
+                <div class="cabeza">
+                    <div class="numer">2</div>
+                </div>
+                <div class="text">
+                  <h3>Totalmente Personalizable</h3>
+                  <p>De acuerdo a tu
+                    marca o negocio.</p>
+                  </div>
+              </article>
+              <article>
+                <div class="cabeza">
+                    <div class="numer">3</div>
+                </div>
+                <div class="text">
+                  <h3>Sin comisiones</h3>
+                   <p>No necesitas descargar
+                    ningún aplicativo y
+                    tampoco tener una
+                    página web.</p>
+                   </div>
+              </article>
+              
+            </div>
+        </div>
+        <a href="#" class="cta-boton rojo">Empieza Gratis</a>
+    </section>
+
+
+    <section class="main flex" id="faq" >
+        <div class="contenedor flex-o">
+            <div class="faqqq">
+                <h1>Preguntas Frecuentes 🖐</h1>
+                <div class="topic">
+                  <div class="open">
+                    <h2 class="question">No me siento cómodo haciendo pedidos en línea. ¿Puedo hablar con alguien?</h2>
+                    <span class="faq-t"></span>
+                  </div>
+                  <p class="answer">Sí, no dude en chatear (WhatsApp) o llamar durante el horario laboral de 
+                    10:00 a. M. A 8:00 p. M. (GMT-05), de lunes a sábado. Teléfono: +51 971 417 095</p>
+                </div>
+                <div class="topic">
+                  <div class="open">
+                  <h2 class="question">¿Cobran comisiones por cada venta que realizo bajo mi enlace o QR?
+              </h2><span class="faq-t"></span>
+                  </div>
+                  <p class="answer">No cobramos comisiones por venta, el dinero de tus ventas pasa directamente
+                    a tu cuenta de banco, sin pasar por nosotros.</p>
+                </div>
+                <div class="topic">
+                  <div class="open">
+                  <h2 class="question">¿Que tan seguro es su servicio?
+              </h2><span class="faq-t"></span>
+                  </div>
+                  <p class="answer">Contamos con certificado SSL para pagos seguros y protección de Datos.</p>
+                </div>
+                <div class="topic">
+                  <div class="open">
+                  <h2 class="question">Tengo un dominio. ¿El costo es menor?
+              </h2><span class="faq-t"></span>
+                  </div>
+                  <p class="answer">Integramos el enlace de tus medios de pago a tu dominio por el mismo costo. </p>
+                </div>
+               
+        
+            </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container grid">
+          <div class="sec aboutus">
+              <h2>Pago Vía Enlace</h2>
+              <p>Comparte tus medios de pago <br> vía enlace y QR.
+                Brindames herramientas digitales para pequeños, medianos y grandes negocios.
+              </p>
+          <ul class="sci">
+              <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          
+          </ul>
+          </div>
+      
+      
+      <div class="sec quicklinks">
+          <h2>Enlaces</h2>
+      <ul>
+          <li><a href="index.html">Inicio</a></li><br>    
+          <li><a href="#">Demos</a></li><br>
+          <li><a href="#">Planes</a></li><br>
+          <li><a href="#beneficios">Beneficios</a></li> <br>
+          <li><a href="#faq">Preguntas Frecuentes</a></li>
+       </ul>
+      </div> 
+      <div class="sec quicklinks">
+          <h2>Soporte</h2>
+      <ul>
+          <li><a href="#">Soporte</a></li><br>
+          <li><a href="#">Privacidad</a></li><br>
+          <li><a href="#">Términos y condiciones</a></li><br>
+          <li><a href="#">Afiliados</a></li><br>
+      </ul>
+      </div> 
+      <div class="sec contact">
+          <h2>Contáctanos</h2>
+          <ul class="info">
+           
+              <li>
+                  <span><i class="fas fa-phone"></i></span>
+                <p><a href="tel:+51972417095">+51 972417095</a></p>
+              </li>
+              <li>
+                <span><i class="fas fa-envelope"></i></span>
+                <p><a href="mailto:admin@ocultto.com">admin@ocultto.com</a></p>
+              </li>
+          </ul>
+      </div>
+      </div>
+      </footer>
+      <div class="copyrightText">
+      <p>Copyright c 2022. Todos los derechos reservados.</p>
+      </div>
+    
+      <a href="#" class="wsp-boton flex-o gap">
+        <span class="wsp-icono"><img src="whatsapp-logo.webp" alt="" srcset=""></span>
+        <span class="wsp-texto">Whatsapp</span>
+      </a>
+    <script src="tabla-precio.js"></script>
+    <script src="menu.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    $(".open").click( function () {
+var container = $(this).parents(".topic");
+var answer = container.find(".answer");
+var trigger = container.find(".faq-t");
+
+answer.slideToggle(200);
+
+if (trigger.hasClass("faq-o")) {
+trigger.removeClass("faq-o");
+}
+else {
+trigger.addClass("faq-o");
+}
+
+if (container.hasClass("expanded")) {
+container.removeClass("expanded");
+}
+else {
+container.addClass("expanded");
+}
+});
+</script>
+  
+</body>
+</html>
