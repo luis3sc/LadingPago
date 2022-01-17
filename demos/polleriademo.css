@@ -1,0 +1,363 @@
+.olas{
+    position: relative;
+    overflow: hidden;
+}
+.toldo{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    max-width: 450px;
+}
+.peg{
+    width: 25%;
+    height: 100%;
+}
+.relativo{
+    position: relative;
+}
+.peg:nth-child(even) {
+    color: #e6b9ca;
+    background: #f7d3e1;
+  }
+  .peg:nth-child(odd) {
+    background: #dd5798;
+    color: #bb3174;
+  }
+.peg:after {
+    display: block;
+    content: "";
+    top: 130px;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background: currentColor;
+    border-radius: 0 0 100px 100px;
+  }
+.polleria-fondo{
+    background: #a1a1a1;
+    background-image: url(fondo-chicken.jpg);
+    background-blend-mode: multiply;
+    background-repeat: repeat;
+    background-size: 25%;
+  }
+.pasteleria-fondo{
+    background-image: url(https://thumbs.dreamstime.com/b/watercolour-pink-lines-background-grunge-ribbon-texture-seamless-horizontal-vintage-print-candy-pink-lines-wallpaper-baby-hand-196039529.jpg);
+}
+.fondo-past{
+    background-color: #dd5798;
+}
+  .btn-pollo{
+      border: 2px solid #fddc06;
+  }
+  .body-pollo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .cuerpo-pollo{
+    border-radius: 30px;
+    height: 73%;
+    width: 90%;
+  }
+  .color-pollo{
+    background-color: #4c2a18;
+  }
+.fondo-blanco{
+    background-color: #ffffff;
+}
+.fondo-turism{
+    background:linear-gradient(179deg, #ffb35e, #e65f00)
+}
+.btn-turis{
+    background:linear-gradient(179deg, #0b0084, #5c0031);
+    border-radius: 40px;
+}
+.fondo-turismo{
+    background:#e65f00e8;
+    background-image: url(https://cdn.getyourguide.com/img/tour/5fb97d0303c23.jpeg/99.jpg);
+   background-repeat: no-repeat;
+   background-position: bottom;
+}
+
+@media only screen and (min-width:1368px) {
+    .fondo-turismo, .fondo-camp{
+        background-size:120%;
+    }
+}
+.lavanderia-fondo{
+    background: #66cff5;
+}
+.border {
+    border-radius: 40px;
+}
+
+  /**  wave **/
+  
+@keyframes charge{from{transform:translateY(2rem);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes wave{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+.wave{
+    opacity:.6;
+    position:fixed;
+    bottom:40%;
+    left:50%;
+    width:6000px;
+    height:6000px;
+    background:#00afef;
+    margin-left:-3000px;
+    transform-origin:50% 48%;
+    border-radius:46%;
+    animation:wave 12s infinite linear;
+    pointer-events:none}
+
+.wave2{animation:wave 28s infinite linear;opacity:.3}
+.wave3{animation:wave 20s infinite linear;opacity:.1}
+
+
+
+.divior{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.svg-tamaño{
+    width: 1980px;
+}
+.color-svg{
+    fill: aquamarine;
+    
+}
+.image-svg-fondo{
+    background-position: 0%;
+ }
+.clip-img{
+    clip-path: url(#user-space) ;
+    clip-rule: inherit;
+    width: 100%;
+    position: absolute;
+}
+
+
+/** asd **/
+.img-flota{
+    transform-origin: top right;
+    transition: transform 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    transition-delay: 100ms;
+    transform: translateX(21%) rotateZ(13deg) skewX(3deg);
+    pointer-events: none;
+  }
+  
+  .img-wrapper{
+    animation: float 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
+    position: absolute;
+    bottom: -100px; left: -100px;
+  }
+  /** animacion imagen **/
+  @keyframes float{
+    0%{
+      transform: translateZ(20px);
+    }
+    100%{
+      transform: translateY(-21px) translateX(-13px) translateZ(30px);
+    }
+  }
+  /** animacion imagen */
+  .img-free{
+      position: absolute;
+      bottom: -70px;
+      left: -190px;
+      display: flex;
+      justify-content: center;
+  }
+  .img-free img{
+      width: 23%;
+      transform: rotate(341deg);
+  }
+  /* */
+  .img-veter{
+      position: absolute;
+      bottom: -34px;
+      display: flex;
+      justify-content: center;
+  }
+  .img-veter img{
+      width: 65%;
+  }
+  .fondo-veter{
+    background-color: #130074;
+  }
+  .btn-veter{
+      background-color: #130074;
+      border-radius: 40px 40px 20px 20px;
+  }
+  .sectionDivider {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: auto;
+  }
+  .divider{
+      width: 100%;
+      position: absolute;
+  }
+  .division-2{
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      bottom: 0%;
+      background-color: #11dc6c;
+  }
+
+
+
+  /** neon efecto **/
+.neon-rojo{
+    background: transparent;
+    border: 3px solid #ff0000;
+    box-shadow: inset 0 0 1vw #ff0000, 0 0 3vw #ff0000, inset 0 0 6vw #ff0000, 0 0 6vw #ff0000, 0 0 .4vw #ff0000;
+    border-radius: .5625rem;
+}
+  
+
+/*  borde neon */
+
+
+.neon_border {
+    position: relative;
+    border-bottom: 3px solid #ff0000;
+    border-radius: 10px;
+  }
+  /*
+  .neon_border:before, .neon_border:after,
+  .neon_border span:before,
+  .neon_border span:after {
+    content: "";
+    height: 50%;
+    display: block;
+    position: absolute;
+    background: #ff0000;
+    box-shadow: 0 0 3px 1px #ff0000, 0 0 12px 2px #ff0000;
+    transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    border-radius: 1px;
+    z-index: -1;
+  }
+  .neon_border:before, .neon_border:after {
+    width: 34%;
+  }
+  .neon_border span:before,
+  .neon_border span:after {
+    width: 1px;
+    height: 25%;
+  }
+  .neon_border:before,
+  .neon_border span:before {
+    top: 0;
+    left: 0;
+  }
+  .neon_border:after,
+  .neon_border span:after {
+    bottom: 0;
+    right: 0;
+  }
+  .neon_border:hover:before, .neon_border:hover:after {
+    width: 100%;
+  }
+  .neon_border:hover span:before, .neon_border:hover span:after {
+    height: 100%;
+  }
+   */
+
+  /* campestre */
+  .fondo-camp{
+      background-image: url(https://static.vecteezy.com/system/resources/previews/002/741/595/non_2x/green-leaves-wall-background-leaf-wall-nature-background-photo.jpg);
+      background-repeat: no-repeat;
+  }
+.btn-camp{
+    border-bottom: 3px solid #90c005;
+    background: #3b521f;
+    border-radius: 50px 0 50px 0px;
+}
+.img-camp{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+.img-camp-l{
+    width: 100% !important;
+}
+
+/** pet ***/
+.fondo-pet{
+    background: #d8d8d8;
+    background-image: url(https://media.istockphoto.com/vectors/vector-seamless-pattern-with-paw-footprints-of-a-dog-stains-and-vector-id1189998984?k=20&m=1189998984&s=170667a&w=0&h=DiIiqTIRd6L0iPYFR-thPSqlnxfuEQ-uf-lHjwrgaCk=);
+    background-blend-mode: overlay;
+}
+.fondo-ama{
+    background-color: #fffd45;
+}
+.btn-pet{
+    background-color: #000000;
+    border-radius: 20px;
+}
+.img-pet{
+    position: absolute;
+    display: flex;
+    bottom: -90px;
+    justify-content: center;
+}
+
+/**  wings **/
+.fondo-wings{
+    background: #0b0b0b;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/004/574/207/non_2x/hand-drawn-seamless-pattern-of-fast-food-doodle-illustration-vector.jpg);
+    background-blend-mode: color-dodge;
+    background-size: contain;
+}
+
+.btn-wngs{
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+}
+.arboles{
+    position: absolute;
+    display: flex;
+    top: -82px;
+    transform: rotate(180deg);
+    justify-content: center;
+}
+.pisco{
+    position: absolute;
+    bottom: -109px;
+    left: -25px;
+}
+.pisco>img{
+    width: 40%;
+}
+
+
+.wings-neon {
+    background-color: #000000;
+    border: 0.2rem solid #ff9e00;
+    border-radius: 2rem;
+    color: #fff;
+    box-shadow:0 0 0.5rem #ffffff45, inset 0 0 0.5rem #ff58009e, 0 0 2rem #ff870099, inset 0 0 2rem #b5ff0070, 0 0 4rem #ff000003, inset 0 0 4rem #ff000078;      
+      }    
+      .wings-neon::-moz-selection {
+          background-color: #08f;  
+      }
+      .wings-neon::selection {
+          background-color: #08f;
+      }
+      .wings-neon:focus {
+          outline: none;
+      }

@@ -75,6 +75,7 @@ background-color:  var(--rojo);}
       background-color: var(--principal);
       position: fixed;
       z-index: 2;
+      top: 0px;
   }
   .flex{
       display: flex;
@@ -143,7 +144,6 @@ background-color:  var(--rojo);}
 }
 
 .grid > article {
-  border: 1px solid #ccc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,6 +151,10 @@ background-color:  var(--rojo);}
   padding: 30px;
   gap: 40px;
 }
+.ledd{
+  width: 100%;
+}
+
 .numer{
     width: 40px;
     height: 40px;
@@ -266,17 +270,26 @@ background-color:  var(--rojo);}
 /** footer **/
 footer{
   position: relative;
+  display: grid;
   width: 100%;
   height: auto;
   padding: 50px 50px;
   background-color: var(--principal);
 }
-footer .container{
+footer .container, .gridss{
   margin:auto;
-  max-width: 1140px;
 width: 100%;
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 grid-gap: 50px;
+display: grid;
+}
+.gridss{
+  text-align: center;
+ 
+}
+.texto-demo{
+  margin-top: 15px;
+  color: #000000;
 }
 
 footer .container .sec h2{
@@ -440,17 +453,25 @@ footer .container .sec p{
   .nav .content .menu {
     display: initial;
   }
+  .ledd{
+    width: 60%;
+    text-align: center;
+  }  
 }
 
 /**  REPONSIVO **/
-
-  @media (min-width:1200px){
+@media only screen and (min-width: 768px){
+  footer .container, .gridss{
+    max-width: 1140px;
+  }
+}
+  @media only screen and (min-width:1200px){
       .contenedor{
           max-width: 1340px;
       }
   }
 
-  @media (max-width: 47.99em){
+  @media only screen and (max-width: 47.99em){
       .flex{
           flex-direction: column;
           gap: 35px;

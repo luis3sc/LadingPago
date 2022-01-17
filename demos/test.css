@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Sarala:700|Exo+2:300');
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  outline: 1px solid transparent;
+}
+
+body{ 
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(-55deg, rgba(50,45,55,1) 0%, rgba(101,96,106,1) 100%);
+  color: #f5f5f5;
+  font-family: 'Exo 2';
+  font-weight: 300;
+}
+
+.wrapper{
+  width: 280px;
+  height: 480px;
+  position: relative;
+}
+
+.card{
+  width: 320px;
+  height: 450px;
+  background: chocolate;
+
+  position: absolute;
+  padding: 34px 21px;
+}
+
+img{
+  transform-origin: top right;
+  transition: transform 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transition-delay: 100ms;
+  transform: translateX(21%) rotateZ(13deg) skewX(3deg);
+  pointer-events: none;
+}
+
+.img-wrapper{
+  animation: float 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
+  position: absolute;
+  top: 0; right: 0;
+}
+/** animacion imagen **/
+@keyframes float{
+  0%{
+    transform: translateZ(20px);
+  }
+  100%{
+    transform: translateY(-21px) translateX(-13px) translateZ(30px);
+  }
+}
+/** animacion imagen */
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0.33;
+    transform: scale(.89);
+  }
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    transform: scale(.67);
+  }
+}
