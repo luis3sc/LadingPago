@@ -1,0 +1,21 @@
+
+/** SWIPER**/
+.swiper-container {
+    width: 91%;
+    overflow-x: hidden;
+}
+
+.swiper-slide img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 390px;
+    height: auto;
+    padding: 0 15px;
+}
+.two .swiper-slide {
+    width: 300px;
+}
