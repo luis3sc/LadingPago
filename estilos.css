@@ -215,16 +215,25 @@ background-color:  var(--rojo);}
   grid-gap: 20px;
   align-items: stretch;
 }
-
-.grid > article {
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+.grid-img-2{
+  width: 30%;
+}
+.grid > article, .grid-2 > article {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--blanco);
   flex-wrap: wrap;
   padding: 30px;
   border-radius: 25px;
-  gap: 40px;
+  gap: 2rem;
   box-shadow: 0 -6px 80px rgb(139 132 132 / 7%), 0 -1.34018px 17.869px rgb(139 132 132 / 4%), 0 -0.39901px 5.32008px rgb(139 132 132 / 3%);
 }
 .ledd{
@@ -232,22 +241,21 @@ background-color:  var(--rojo);}
 }
 
 .numer{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 90px;
+    height: 40px;
+    border-radius: 30px;
     background: linear-gradient(186deg, rgba(162,0,255,1) 0%, rgba(60,0,255,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--blanco);
-    font-size: 2rem;
-    font-weight: bolder;
+    font-size: 1rem;
     position: relative;
 }
 .numer::before{
   content: "";
   width: 80px;
-  height: 3px;
+  height: 1.5px;
   left: -80px;
   background: linear-gradient(186deg, rgba(162,0,255,1) 0%, rgba(60,0,255,1) 100%);
   position: absolute;
@@ -255,21 +263,26 @@ background-color:  var(--rojo);}
 .numer::after{
   content: "";
   width: 80px;
-  height: 3px;
+  height: 1.5px;
   right: -80px;
   background: linear-gradient(186deg, rgba(162,0,255,1) 0%, rgba(60,0,255,1) 100%);
   position: absolute;
 }
-.grid .text {
+.grid .text, .grid-2 .text {
   text-align: center;
+  line-height: 1.5rem;
 }
 
-.grid .text h3 {
+.grid .text h3, .grid-2 h3 {
   font-size: 1.4rem;
 }
-
-.grid .text p {
-  font-size: 0.9rem;
+.grid-2 h4{
+  font-weight:lighter ;
+  font-size: 17px;
+}
+.grid .text p, .grid-2 .text p {
+  font-size: 1.1rem;
+  color: #5c5c5c;
 }
 /**  PREFGUNTAS FRECUENTES **/
 

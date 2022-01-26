@@ -12,11 +12,14 @@
     grid-gap: 15px;
     align-items: stretch;
   }
-  .col{
-    padding: 25px;
-    border-radius: 25px;
-    box-shadow: 0 -6px 80px rgb(139 132 132 / 7%), 0 -1.34018px 17.869px rgb(139 132 132 / 4%), 0 -0.39901px 5.32008px rgb(139 132 132 / 3%);
-  }
+ 
+.col{
+  width:300px;
+  padding: 18px;
+  border-radius: 25px;
+  box-shadow: 0 -6px 80px rgb(139 132 132 / 7%), 0 -1.34018px 17.869px rgb(139 132 132 / 4%), 0 -0.39901px 5.32008px rgb(139 132 132 / 3%);
+}
+
   
   
   
@@ -154,14 +157,22 @@
     background: linear-gradient(186deg, rgba(162,0,255,1) 0%, rgba(60,0,255,1) 100%);
     color: #ffffff;
   }
-/** BORRAR **/
-  @media (max-width: 620px){
-      .col{
-        margin-left: auto;
-        margin-right: auto;
-        width: 94%;
-      }
-  }
+  
+
+.general {
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  -ms-scroll-snap-destination: 50% 0%;
+      scroll-snap-destination: 50% 0%;
+  overflow: auto;
+ /* white-space: nowrap;
+  counter-reset: list;*/
+  display: flex;
+  gap: 10px;
+  padding: 10px 0 0 15px;
+}
+
   @media (min-width:620px){
       .grid-tablab{
         display: grid !important;
